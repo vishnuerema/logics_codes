@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+</head>
+<body>
+<script type="text/javascript">
+	function pyramid(){
+		var total = 10;
+		var array = '';
+		for(var i = 1; i <= total; i++){
+
+			for(var j = 1; j <= i; j++){
+				array += j ;
+			}
+			console.log(array);
+		array = '';
+		}
+
+		 var totalNumberofRows = 5, arr
+    for (var i = 1; i <= totalNumberofRows; i++) {
+    	arr = [];
+        for (var j = 1; j <= i; j++) {
+            arr.push(j);            
+        }
+        console.log(arr.join(" ") + "\n");
+    }
+
+	}
+pyramid()
+
+
+ var number = [1,4,9,16]
+ var val = number.map(function(num){
+ 	return Math.sqrt(num)
+ })
+ console.log(val)
+
+ var val1 = number.map(num => num * 2)
+ console.log(val1)
+
+
+let kvArray = [{key: 1, value: 10}, 
+               {key: 2, value: 20}, 
+               {key: 3, value: 30}];
+
+   var varr = kvArray.map(c => {
+   	empobj = {};
+   	empobj[c.key] = c.value;
+   	return empobj
+   })   
+   console.log(varr)         
+</script>
+<script type="text/javascript">
+	function palindrome(){
+		var string = prompt();
+		var rev_str = string.split("").reverse().join("");
+		console.log(rev_str)
+		if(string == rev_str){
+			console.log("It is a palindrome");
+		}
+		else{
+			console.log("Not a palindrome");
+		}
+
+}
+palindrome();
+
+function createPyramid(){
+var rows = 10;
+    for (let i = 0; i < rows; i++) {
+        var output = '';
+        for (let j =0; j < rows - i; j++){output += ' '} 
+        for (let k = 0; k <= i; k++){ output += '* '}
+        console.log(output);  
+    } 
+}
+
+createPyramid() 
+
+function myStrRev(sring){ 
+	var string = sring;
+	var string_length = string.length;
+	var reversed_string = '';
+	for(var i=(string_length-1); i>=0; i--){ 
+
+		 reversed_string += string[i]; 
+	} 
+	return reversed_string; 
+}
+	var hi = "Hello fhfhj Eduzip";
+	console.log(myStrRev(hi))
+//Reverse string order change 
+</script>
+</body>
+</html>
